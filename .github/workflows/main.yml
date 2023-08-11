@@ -1,4 +1,4 @@
-name: CIDE for Serverless Application
+name: CICD for Serverless Application
 run-name: ${{ github.actor }} is doing CICD for Serverless Application
 
 on: 
@@ -9,4 +9,4 @@ jobs:
   pre-deploy: 
     runs-on: ubuntu-lastest
     steps: 
-        - run: echo "This job is automatically triggered by a ${{ github.event_name}} event.""
+      - run: echo "This job is automatically triggered by a ${{ github.event_name}} event.""
