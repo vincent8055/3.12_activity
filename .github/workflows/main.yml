@@ -1,15 +1,15 @@
 name: CICD for Serverless Application
-run-name: ${{ github.actor }} is doing CICD for Serverless Application
+run-name: ${{ github.actor }} is doing CICD for serverless application
 
-on: 
+on:
   push:
     branches: [ main, "*" ]
-  
+
 jobs:
-  pre-deploy: 
-    runs-on: ubuntu-lastest
-    steps: 
-      - run: echo "This job is automatically triggered by a ${{ github.event_name }} event."
+  pre-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job is automatically triggered by a ${{ github.event_name }} event."
 
   install-dependencies:
     runs-on: ubuntu-latest
