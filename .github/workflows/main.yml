@@ -9,4 +9,4 @@ jobs:
   pre-deploy: 
     runs-on: ubuntu-lastest
     steps: 
-      - run: echo "This job is automatically triggered by a ${{ github.event_name}} event.""
+      - run: echo "This job is automatically triggered by a ${{ github.event_name }} event.""
