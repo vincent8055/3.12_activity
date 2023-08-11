@@ -3,10 +3,18 @@ run-name: ${{ github.actor }} is doing CICD for Serverless Application
 
 on: 
   push:
-    branches: [ main, "*"]
+    branches: [ main, "*" ]
   
 jobs:
   pre-deploy: 
     runs-on: ubuntu-lastest
     steps: 
-      - run: echo "This job is automatically triggered by a ${{ github.event_name }} event.""
+      - run: echo "This job is automatically triggered by a ${{ github.event_name }} event."
+
+  install-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: action/checkout@v3
+      - name: Run installation of dependencies commands
+      - run: npm install
