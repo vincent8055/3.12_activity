@@ -1,5 +1,5 @@
 # CHANGE-TO-YOURNAME-aws-node-http-api-project
-service: Vincent-aws-node-http-api-project
+service: Vincent-assignment3-11
 frameworkVersion: '3'
 
 provider:
